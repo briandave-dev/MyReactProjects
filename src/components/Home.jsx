@@ -22,20 +22,20 @@ const Home = () => {
   ];
 
   return (
-    <div className="max-w-[1200px] h-[700px] w-full m-auto py-16 px-12 relative">
+    <div className="max-w-[1400px] h-[700px] w-full m-auto py-16 px-4 relative">
       <div
         style={{ backgroundImage: `url(${slides[0].url})` }}
-        className="w-full h-[60%] sm:h-full rounded-2xl bg-center bg-cover duration-500"
+        className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
       ></div>
 
       {/*Left Arrow */}
-      <div>
-        <BsChevronCompactLeft/>
+      <div className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
+        <BsChevronCompactLeft size={30}/>
       </div>
-      
+
       {/*Right Arrow */}
-      <div>
-        <BsChevronCompactRight/>
+      <div className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer ">
+        <BsChevronCompactRight size={30}/>
       </div>
     </div>
   );
