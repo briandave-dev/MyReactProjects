@@ -32,6 +32,7 @@ const Home = () => {
       <div>
         <BsChevronCompactLeft/>
       </div>
+      
       {/*Right Arrow */}
       <div>
         <BsChevronCompactRight/>
