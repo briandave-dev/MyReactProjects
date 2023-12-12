@@ -1,4 +1,6 @@
 import { React, useState } from "react";
+import {BsChevronCompactLeft} from "react-icons/bs" 
+import {BsChevronCompactRight} from "react-icons/bs" 
 
 const Home = () => {
   const slides = [
@@ -27,7 +29,13 @@ const Home = () => {
       ></div>
 
       {/*Left Arrow */}
-      {/*Left Arrow */}
+      <div>
+        <BsChevronCompactLeft/>
+      </div>
+      {/*Right Arrow */}
+      <div>
+        <BsChevronCompactRight/>
+      </div>
     </div>
   );
 };
