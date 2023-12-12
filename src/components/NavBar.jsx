@@ -33,7 +33,7 @@ const NavBar = () => {
 
   return (
     <nav className="bg-slate-900">
-      <div className="h-10vh flex justify-between text-white lg:py-5 px-20 py-4 flex-1">
+      <div className="h-10vh flex justify-between text-white lg:py-5 px-8 py-4 flex-1">
         <div className="flex items-center flex-1">
           <span className="text-3xl font-bold">Dave_Dev</span>
         </div>
@@ -61,7 +61,7 @@ const NavBar = () => {
 
         <div>{click && content}</div>
 
-        <button className="block sm:hidden transition" onClick={handleClick}>
+        <button className="block sm:hidden" onClick={handleClick}>
           {click ? <FaTimes /> : <CiMenuFries />}
         </button>
       </div>
