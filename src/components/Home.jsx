@@ -24,6 +24,12 @@ const Home = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    setIsActive(!isActive)
+  }
+
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
@@ -41,7 +47,11 @@ const Home = () => {
   }
 
   return (
-    <div className="max-w-[1400px] h-[700px] w-full m-auto py-16 px-4 relative group">
+    <>
+    <div>
+      <center className="py-8 font-bold text-3xl">Image Slider</center>
+    </div>
+    <div className="max-w-[1400px] h-[700px] w-full m-auto px-4 relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover duration-300"
@@ -61,14 +71,15 @@ const Home = () => {
         {slides.map((slide, slideIndex) => (
           <div
             key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className="text-2xl cursor-pointer"
+            onClick={() => {goToSlide(slideIndex); handleClick}}
+            className={`text-${isActive ? 'xl' : '2xl'} cursor-pointer`}
           >
             <RxDotFilled />
           </div>
         ))}
       </div>
     </div>
+    </>
   );
 };
 
