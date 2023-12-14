@@ -24,6 +24,12 @@ const Home = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const [counter, setCounter] = useState(0);
+
+  useEffect (() => {
+    setCounter(counter)
+  }, [])
+
   const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
@@ -78,6 +84,12 @@ const Home = () => {
           </div>
         ))}
       </div>
+    </div>
+
+    <div className="flex items-center justify-center mt-20 flex-col">
+      <button className="mb-2 border border-solid border-red-500 p-2" onClick={() => setCounter((prevCounter) => prevCounter+1)}>+</button>
+      <h1 className="text-3xl">{counter}</h1>
+      <button className="mt-2 border border-solid border-red-500 p-2" onClick={() => setCounter((prevCounter) => prevCounter-1)}>-</button>
     </div>
     </>
   );
