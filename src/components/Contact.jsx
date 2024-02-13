@@ -1,8 +1,8 @@
+import Accordion from "./25/Accordion/Accordion";
+
 const Contact = () => {
     return ( 
-        <div className="flex h-screen justify-center items-center font-bold">
-            Contact Page
-        </div>
+        <Accordion></Accordion>
      );
 }
  

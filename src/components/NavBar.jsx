@@ -1,4 +1,4 @@
-import { Link, useResolvedPath, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
@@ -59,7 +59,7 @@ const NavBar = () => {
           </div>
         </div>
 
-        <div>{click && content}</div>
+        <div className="">{click && content}</div>
 
         <button className="block sm:hidden" onClick={handleClick}>
           {click ? <FaTimes /> : <CiMenuFries />}
