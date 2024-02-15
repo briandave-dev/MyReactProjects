@@ -12,3 +12,8 @@ nav a.active {
     text-decoration: underline;
     color: red;
 }
+
+button {
+    border: 1px solid white;
+    padding: .5em .5em;
+}
