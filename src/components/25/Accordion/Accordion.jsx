@@ -21,7 +21,7 @@ const Accordion = () => {
   }
 
   return (
-    <div className="flex flex-col h-[80vh] w-[100vw] items-center place-content-center">
+    <div className="flex font-bold flex-col h-[80vh] w-[100vw] items-center place-content-center">
       <button
         onClick={() => setSelectMultiple(!selectMultiple)}
         className="border-black border-2 p-2 mb-10"

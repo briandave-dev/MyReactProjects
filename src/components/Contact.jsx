@@ -5,7 +5,7 @@ import "../App.css"
 const Contact = () => {
     return ( 
         <>
-            {/* <Accordion/> */}
+            <Accordion/> 
             <CreateRandomValue/>
         </>
      );
