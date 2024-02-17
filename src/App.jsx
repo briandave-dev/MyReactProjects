@@ -5,9 +5,9 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 
 import { Routes, Route } from "react-router-dom";
-import Home from "./components/home";
-import About from "./components/about";
-import Contact from "./components/contact";
+import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
 import Index from "./components/Index";
 
 function App() {
