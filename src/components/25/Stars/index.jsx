@@ -20,7 +20,7 @@ export default function Stars({ noOfStars = 5 }) {
     }
 
   return (
-    <div className="h-[60vh] flex items-center justify-center">
+    <div className="h-[30vh] flex items-center justify-center">
       {[...Array(noOfStars)].map((_, index) => {
         index += 1
 

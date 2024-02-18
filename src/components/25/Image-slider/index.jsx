@@ -54,11 +54,10 @@ export default function ImageSlider({ url, limit = 5, page = 1 }) {
   }
 
   return (
-    <div className="relative flex justify-center items-center w-[600px] h-[450px]">
+    <div className="relative flex flex-col justify-center items-center w-[100vw] h-[60vh]">
       <BsArrowLeftCircleFill
-      size={40}
         onClick={handlePrevious}
-        className="absolute w-[2em] aspect-square text-white left-[1em]"
+        className="absolute w-[2em] aspect-square text-white left-[20vw] text-2xl sm:text-[3em]"
       />
       {images && images.length
         ? images.map((imageItem, index) => (
@@ -68,26 +67,25 @@ export default function ImageSlider({ url, limit = 5, page = 1 }) {
               alt={imageItem.download_url}
               className={
                 currentSlide === index
-                  ? "border border-black w-full h-full"
+                  ? "w-[60vw] h-[28vh]"
                   : "hidden"
               }
             />
           ))
         : null}
       <BsArrowRightCircleFill
-      size={40}
         onClick={handleNext}
-        className="absolute w-[2em] aspect-square text-white right-[1em]"
+        className="absolute w-[2em] aspect-square text-white right-[20vw] text-2xl sm:text-[3em]"
       />
-      <span className="flex absolute bottom-[1em]">
+      <span className="flex relative bottom-[1em]">
         {images && images.length
           ? images.map((_, index) => (
               <button
                 key={index}
                 className={
                   currentSlide === index
-                    ? "bg-white h-[15px] aspect-square rounded-[50%] cursor-pointer outline-none mx-[0.2em]"
-                    : "bg-gray-400 border-none h-[15px] aspect-square rounded-[50%] cursor-pointer outline-none mx-[0.2em]"
+                    ? "bg-white h-[12px] aspect-square rounded-[50%] cursor-pointer outline-none mx-[0.2em]"
+                    : "bg-gray-400 border-none h-[12px] aspect-square rounded-[50%] cursor-pointer outline-none mx-[0.2em]"
                 }
                 onClick={() => setCurrentSlide(index)}
               ></button>
