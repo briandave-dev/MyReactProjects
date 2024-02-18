@@ -54,7 +54,7 @@ export default function ImageSlider({ url, limit = 5, page = 1 }) {
   }
 
   return (
-    <div className="relative flex flex-col justify-center items-center w-[100vw] h-[60vh]">
+    <div className="relative flex flex-col justify-center items-center w-[100vw] h-[60vh] lg:mt-[10em]">
       <BsArrowLeftCircleFill
         onClick={handlePrevious}
         className="absolute w-[2em] aspect-square text-white left-[20vw] text-2xl sm:text-[3em]"
@@ -67,7 +67,7 @@ export default function ImageSlider({ url, limit = 5, page = 1 }) {
               alt={imageItem.download_url}
               className={
                 currentSlide === index
-                  ? "w-[60vw] h-[28vh]"
+                  ? "w-[70vw] h-[28vh] sm:h-[35vh] sm:w-[73vw] lg:h-[80vh] lg:w-[75vw]"
                   : "hidden"
               }
             />
