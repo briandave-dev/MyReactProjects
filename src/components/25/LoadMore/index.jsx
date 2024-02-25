@@ -46,7 +46,7 @@ const LoadMore = () => {
 
   return (
     <div className="flex flex-col gap-[20px]">
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 px-2">
         {products && products.length
           ? products.map((item, index) => (
               <div
