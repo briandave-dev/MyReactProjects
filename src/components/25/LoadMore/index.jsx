@@ -48,9 +48,9 @@ const LoadMore = ({}) => {
     <div className="flex flex-col gap-[20px]">
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2">
         {products && products.length
-          ? products.map((item) => (
+          ? products.map((item, index) => (
               <div
-                key={item.id}
+                key={index}
                 className="p-4 border border-black flex flex-col gap-2"
               >
                 {/* <img
@@ -58,7 +58,7 @@ const LoadMore = ({}) => {
                   alt={item.title}
                   className="w-[120px] h-[100px]"
                 /> */}
-                <p>{item.id}</p>
+                <p>{index + 1}</p>
                 <p>{item.title}</p>
               </div>
             ))
