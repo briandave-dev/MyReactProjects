@@ -49,7 +49,9 @@ const LoadMore = ({}) => {
                 }
             </div>
             <div className="">
-                <button>Load more</button>
+                <center>
+                <button className="p-4 border border-black font-bold bg-black text-white">Load more</button>
+                </center>
             </div>
         </div>
      );
