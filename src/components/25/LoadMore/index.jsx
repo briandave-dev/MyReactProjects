@@ -31,7 +31,7 @@ const LoadMore = () => {
   }, [count]);
 
   useEffect(() => {
-    if (products && products.length >= 120) setDisabled(true);
+    if (products && products.length === 100) setDisabled(true);
   }, [products]);
 
   if (loading) {
