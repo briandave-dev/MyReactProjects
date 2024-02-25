@@ -4,7 +4,7 @@ const LoadMore = ({}) => {
   const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState([]);
   const [count, setCount] = useState(0);
-  const [disabled, setDisabled] = useState(null);
+  const [disabled, setDisabled] = useState(false);
 
   async function fetchProducts() {
     try {
@@ -73,9 +73,7 @@ const LoadMore = ({}) => {
           >
             Load more
           </button>
-          {
-            disabled ? <div>No more data to load</div> : null
-          }
+          
         </center>
       </div>
     </div>
