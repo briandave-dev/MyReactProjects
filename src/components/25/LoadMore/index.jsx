@@ -9,7 +9,7 @@ const LoadMore = ({}) => {
     async function fetchProducts() {
         try {
             setLoading(true)
-            const response = await fetch(`https://dummyjson.com/products?.limit=20&skip=${count === 0 ? 0 : count*20}`)
+            const response = await fetch(`https://dummyjson.com/products?.limit=6&skip=${count === 0 ? 0 : count*6}`)
             const result = await response.json()
 
             if(result && result.products.length !== 0) {
