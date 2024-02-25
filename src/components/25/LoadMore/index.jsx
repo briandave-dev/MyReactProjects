@@ -53,11 +53,12 @@ const LoadMore = ({}) => {
                 key={item.id}
                 className="p-4 border border-black flex flex-col gap-2"
               >
-                <img
+                {/* <img
                   src={item.thumbnail}
                   alt={item.title}
                   className="w-[120px] h-[100px]"
-                />
+                /> */}
+                <p>{item.id}</p>
                 <p>{item.title}</p>
               </div>
             ))
