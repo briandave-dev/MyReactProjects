@@ -73,6 +73,9 @@ const LoadMore = ({}) => {
           >
             Load more
           </button>
+          {
+            disabled ? <div>No more data to load</div> : null
+          }
         </center>
       </div>
     </div>
