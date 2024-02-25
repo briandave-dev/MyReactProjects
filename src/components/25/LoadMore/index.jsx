@@ -12,8 +12,8 @@ const LoadMore = ({}) => {
             const response = await fetch(`https://dummyjson.com/products?.limit=6&skip=${count === 0 ? 0 : count*6}`)
             const result = await response.json()
 
-            if(result && result.products.length !== 0) {
-                setProducts(result.products)
+            if(result && result.products.length && result.products) {
+                setProducts((prevData) => [...prevData, ...result.products])
                 setLoading(false)
             }
         } catch(e){
@@ -24,12 +24,14 @@ const LoadMore = ({}) => {
 
     useEffect(() => {
         fetchProducts()
-    }, [])
+    }, [count])
 
     if(loading){
         return (
             <div>
+                <center>
                 <h1>Loading...</h1>
+                </center>
             </div>
         )
     }
@@ -41,16 +43,16 @@ const LoadMore = ({}) => {
                     products && products.length ? 
                     products.map((item) => (
                         <div key={item.id} className="p-4 border border-black flex flex-col gap-2">
-                            <img src={item.thumbnail} alt={item.title} />
+                            <img src={item.thumbnail} alt={item.title} className="w-[120px] h-[100px]"/>
                             <p>{item.title}</p>
                         </div>
                     ))
                     : null
                 }
             </div>
-            <div className="">
+            <div className="mb-5 pb-5">
                 <center>
-                <button className="p-4 border border-black font-bold bg-black text-white">Load more</button>
+                <button className="p-4 border border-black font-bold bg-black text-white" onClick={() => setCount(count + 1)}>Load more</button>
                 </center>
             </div>
         </div>
