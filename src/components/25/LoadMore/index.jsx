@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const LoadMore = ({}) => {
+const LoadMore = () => {
   const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState([]);
   const [count, setCount] = useState(0);
@@ -10,7 +10,7 @@ const LoadMore = ({}) => {
     try {
       setLoading(true);
       const response = await fetch(
-        `https://dummyjson.com/products?.limit=20&skip=${
+        `https://dummyjson.com/products?limit=20&skip=${
           count === 0 ? 0 : count * 20
         }`
       );
@@ -31,7 +31,7 @@ const LoadMore = ({}) => {
   }, [count]);
 
   useEffect(() => {
-    if (products && products.length === 0) setDisabled(true);
+    if (products && products.length >= 120) setDisabled(true);
   }, [products]);
 
   if (loading) {
@@ -68,12 +68,14 @@ const LoadMore = ({}) => {
         <center>
           <button
             disabled={disabled}
-            className="p-4 border border-black font-bold bg-black text-white"
+            className={`${disabled ? "p-4 border border-gray-200 text-gray-600 bg-gray-500" : "p-4 border border-black font-bold bg-black text-white"}`}
             onClick={() => setCount(count + 1)}
           >
             Load more
           </button>
-          
+          {
+            disabled ? <div>No more data to load</div> : null
+          }
         </center>
       </div>
     </div>
