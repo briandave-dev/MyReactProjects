@@ -11,22 +11,22 @@ const NavBar = () => {
     <>
       <div className="block absolute top-16 w-full left-0 right-0 bg-slate-900 transition z-50">
         <ul className="text-center text-xl p-20">
-        <NavLink to="/">
+        <NavLink to="/" onClick={handleClick}>
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
               Home
             </li>
           </NavLink>
-          <NavLink to="/home">
+          <NavLink to="/home" onClick={handleClick}>
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
               Project1
             </li>
           </NavLink>
-          <NavLink to="/about">
+          <NavLink to="/about" onClick={handleClick}>
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
               Project2
             </li>
           </NavLink>
-          <NavLink to="/contact">
+          <NavLink to="/contact" onClick={handleClick}>
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
               Project3
             </li>
