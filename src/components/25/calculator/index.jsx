@@ -37,9 +37,9 @@ const Calculator = () => {
       <button className="span-two">AC</button>
       <button>DEL</button>
       <DigitButton digit="/" dispatch={dispatch} />
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
+      <DigitButton digit="1" dispatch={dispatch} />
+      <DigitButton digit="2" dispatch={dispatch} />
+      <DigitButton digit="3" dispatch={dispatch} />
       <button>*</button>
       <button>4</button>
       <button>5</button>
