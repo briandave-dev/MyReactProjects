@@ -14,6 +14,7 @@ const Contact = () => {
             <Stars noOfStars= {5}/> 
             <ImageSlider url={'https://picsum.photos/v2/list'} limit={10} page={2}/>
             <LoadMore /> 
+            <Calculator /> 
         */}
         <TicTacToe />
     </>
