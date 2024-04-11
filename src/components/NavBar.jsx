@@ -62,7 +62,7 @@ const NavBar = () => {
               </NavLink>
               <NavLink to="/contact">
                 <li className="hover:cursor-pointer hover:underline hover:text-red-800 transition-all">
-                  Project3
+                  Games
                 </li>
               </NavLink>
             </ul>
