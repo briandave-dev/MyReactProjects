@@ -28,7 +28,7 @@ const NavBar = () => {
           </NavLink>
           <NavLink to="/contact" onClick={handleClick}>
             <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-              Project3
+              Games
             </li>
           </NavLink>
         </ul>
