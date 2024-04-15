@@ -102,7 +102,7 @@ const Miss = () => {
         <div className="flex gap-3 px-3 overflow-x-scroll">
           {mis.map((miss, index) => (
             <div
-              key={miss.id}
+              key={index}
               onClick={() => Switch(index)}
               className="mt-5 w-[32vh] flex-shrink-0 aspect-square bg-[#212020] flex flex-col justify-center items-center gap-2 rounded-lg"
             >
