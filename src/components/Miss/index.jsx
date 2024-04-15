@@ -8,6 +8,7 @@ import miss1 from "./assets/miss1.jpg";
 import miss2 from "./assets/miss2.jpg";
 import miss3 from "./assets/miss3.jpg";
 import miss4 from "./assets/miss4.jpg";
+import email from "./phone.svg"
 
 const Miss = () => {
   const [current, setCurrent] = useState(0);
@@ -134,6 +135,33 @@ const Miss = () => {
           
           <div className="mt-5 bg-[#f5e9a9] h-[2.5vh] rounded-sm"></div>
 
+          <div className="px-4 mt-6 flex-col flex gap-3">
+            <h1 className="text-[#f5e9a9] text-2xl">A Propos</h1>
+            <p className="text-2xl mt-2">People's choice est un concept qui permet à toute personne de voter pour sa candidate préférée en ligne et à tout moment.</p>
+            <center className="flex gap-7 mt-2">
+              <img src={facebook} alt="Facebook logo" />
+              <img src={insta} alt="Instagram logo" />
+              <img src={twitter} alt="Twitter logo" />
+            </center>
+          </div>
+
+          <div className="mt-10 flex flex-col gap-2 px-4 text-2xl">
+          <h1 className="text-[#f5e9a9] text-2xl">Liens utiles</h1>
+            <p className="mt-3">A Propos</p>
+            <p>Devenir partenaire</p>
+            <p>Passer sa pub</p>
+            <p>Termes et conditions</p>
+            <p>FAQ</p>
+          </div>
+
+          <div className="mt-[3.2em] flex flex-col gap-2 px-4 text-2xl">
+          <h1 className="text-[#f5e9a9] text-2xl">Liens utiles</h1>
+            <p className="mt-3">Contacts</p>
+            <p>Devenir partenaire</p>
+            <p>Passer sa pub</p>
+            <p>Termes et conditions</p>
+            <p>FAQ</p>
+          </div>
 
         <div className="mt-[10em]"></div>
       </div>
