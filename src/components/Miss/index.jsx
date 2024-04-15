@@ -99,12 +99,12 @@ const Miss = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-3 px-3 overflow-x-scroll">
+        <center className="flex gap-3 px-3 overflow-x-scroll">
           {mis.map((miss, index) => (
-            <div
+            <center
               key={index}
               onClick={() => Switch(index)}
-              className="mt-5 w-[32vh] flex-shrink-0 aspect-square bg-[#212020] flex flex-col justify-center items-center gap-2 rounded-lg"
+              className="mt-5 w-[32vh] py-4 flex-shrink-0 aspect-square bg-[#212020] flex flex-col justify-center items-center gap-2 rounded-lg"
             >
               <div
                 style={{ backgroundImage: `url(${miss.image})` }}
@@ -112,11 +112,11 @@ const Miss = () => {
               >
                 {""}
               </div>
-              <center className="px-[5em]">{miss.name}</center>
+              <center className="px-[3em]">{miss.name}</center>
               <center className="text-gray-300">{miss.votes} votes</center>
-            </div>
+            </center>
           ))}
-        </div>
+        </center>
 
         <div className="mt-10 mb-7">
             <div className="flex justify-between">
@@ -131,6 +131,9 @@ const Miss = () => {
           <div className="grid place-items-center">
             <h1>Flemme</h1>
           </div>
+          
+          <div className="mt-5 bg-[#f5e9a9] h-[2.5vh] rounded-sm"></div>
+
 
         <div className="mt-[10em]"></div>
       </div>
