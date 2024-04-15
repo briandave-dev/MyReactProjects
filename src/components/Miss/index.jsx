@@ -170,9 +170,9 @@ const Miss = () => {
 
         <div className="mt-[5em]"></div>
 
-        <center>&copy; 2024 Dave_Dev, Inc. Tous droits réservés.</center>
+        <center className="text-[.7em]">&copy; 2024 Dave_Dev, Inc. Tous droits réservés.</center>
 
-        <div className="mt-[1em]"></div>
+        <div className="mt-[2em]"></div>
       </div>
     </>
   );
