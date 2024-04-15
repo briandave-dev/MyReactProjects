@@ -8,7 +8,9 @@ import miss1 from "./assets/miss1.jpg";
 import miss2 from "./assets/miss2.jpg";
 import miss3 from "./assets/miss3.jpg";
 import miss4 from "./assets/miss4.jpg";
-import email from "./phone.svg"
+import phone from "./assets/phone.svg";
+import email from "./assets/email.svg";
+import localisation from "./assets/localisation.svg";
 
 const Miss = () => {
   const [current, setCurrent] = useState(0);
@@ -120,48 +122,51 @@ const Miss = () => {
         </center>
 
         <div className="mt-10 mb-7">
-            <div className="flex justify-between">
-              <div className="w-5 h-5 shadow-2xl ml-4 rounded-full bg-gradient-to-br from-[#f5e9a9] via-[#c0800f] to-[#8c4e06]"></div>
-              <center className="bg-gradient-to-r from-[#fdf491] to-[#906c33] text-transparent bg-clip-text">
-                Nos Partenaires
-              </center>
-              <div className="w-5 h-5 shadow-2xl mr-4 rounded-full bg-gradient-to-br from-[#f5e9a9] via-[#c0800f] to-[#8c4e06]"></div>
-            </div>
-          </div>
-
-          <div className="grid place-items-center">
-            <h1>Flemme</h1>
-          </div>
-          
-          <div className="mt-5 bg-[#f5e9a9] h-[2.5vh] rounded-sm"></div>
-
-          <div className="px-4 mt-6 flex-col flex gap-3">
-            <h1 className="text-[#f5e9a9] text-2xl">A Propos</h1>
-            <p className="text-2xl mt-2">People's choice est un concept qui permet à toute personne de voter pour sa candidate préférée en ligne et à tout moment.</p>
-            <center className="flex gap-7 mt-2">
-              <img src={facebook} alt="Facebook logo" />
-              <img src={insta} alt="Instagram logo" />
-              <img src={twitter} alt="Twitter logo" />
+          <div className="flex justify-between">
+            <div className="w-5 h-5 shadow-2xl ml-4 rounded-full bg-gradient-to-br from-[#f5e9a9] via-[#c0800f] to-[#8c4e06]"></div>
+            <center className="bg-gradient-to-r from-[#fdf491] to-[#906c33] text-transparent bg-clip-text">
+              Nos Partenaires
             </center>
+            <div className="w-5 h-5 shadow-2xl mr-4 rounded-full bg-gradient-to-br from-[#f5e9a9] via-[#c0800f] to-[#8c4e06]"></div>
           </div>
+        </div>
 
-          <div className="mt-10 flex flex-col gap-2 px-4 text-2xl">
-          <h1 className="text-[#f5e9a9] text-2xl">Liens utiles</h1>
-            <p className="mt-3">A Propos</p>
-            <p>Devenir partenaire</p>
-            <p>Passer sa pub</p>
-            <p>Termes et conditions</p>
-            <p>FAQ</p>
-          </div>
+        <div className="grid place-items-center">
+          <h1>Flemme</h1>
+        </div>
 
-          <div className="mt-[3.2em] flex flex-col gap-2 px-4 text-2xl">
+        <div className="mt-5 bg-[#f5e9a9] h-[2.5vh] rounded-sm"></div>
+
+        <div className="px-4 mt-6 flex-col flex gap-3">
+          <h1 className="text-[#f5e9a9] text-2xl">A Propos</h1>
+          <p className="text-2xl mt-2">
+            People's choice est un concept qui permet à toute personne de voter
+            pour sa candidate préférée en ligne et à tout moment.
+          </p>
+          <center className="flex gap-7 mt-2">
+            <img src={facebook} alt="Facebook logo" />
+            <img src={insta} alt="Instagram logo" />
+            <img src={twitter} alt="Twitter logo" />
+          </center>
+        </div>
+
+        <div className="mt-10 flex flex-col gap-2 px-4 text-2xl">
           <h1 className="text-[#f5e9a9] text-2xl">Liens utiles</h1>
-            <p className="mt-3">Contacts</p>
-            <p>Devenir partenaire</p>
-            <p>Passer sa pub</p>
-            <p>Termes et conditions</p>
-            <p>FAQ</p>
-          </div>
+          <p className="mt-3">A Propos</p>
+          <p>Devenir partenaire</p>
+          <p>Passer sa pub</p>
+          <p>Termes et conditions</p>
+          <p>FAQ</p>
+        </div>
+
+        <div className="mt-[3.2em] flex flex-col gap-2 px-4 text-2xl">
+          <h1 className="text-[#f5e9a9] text-2xl">Contacts</h1>
+          <div className="flex gap-2 mt-3"><img src={localisation} alt="icon" /><p className="">2e étage immeuble de la pharmacie Mvog Ada</p></div>
+          <div className="flex gap-2"><img src={phone} alt="icon" /><p className="">+237 656372666</p></div>
+          <div className="flex gap-2"><img src={email} alt="icon" /><p className="">misscameroun@misscameroun.org</p></div>
+          <div className="flex gap-2"><img src={phone} alt="icon" /><p className="">Support technique: +237690222814</p></div>
+
+        </div>
 
         <div className="mt-[10em]"></div>
       </div>
