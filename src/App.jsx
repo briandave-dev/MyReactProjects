@@ -9,19 +9,21 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Index from "./components/Index";
+import Miss from "./components/Miss";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <NavBar />
+    <Miss />
+      {/* <NavBar />
       <Routes>
           <Route exact path="/" element={<Index />} />
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
-      </Routes>
+      </Routes> */}
     </>
   );
 }
