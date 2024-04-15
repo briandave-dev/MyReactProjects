@@ -16,27 +16,32 @@ const Miss = () => {
       id: 1,
       name: "NLED CECILE MARCELLE",
       image: miss1,
-      votes: 10000,
+      votes: 6137,
     },
     {
       id: 2,
-      name: "Name 2",
+      name: "OUM REBECCA GLADYS",
       image: miss2,
-      votes: 10000,
+      votes: 8837,
     },
     {
       id: 3,
-      name: "Name 3",
+      name: "SEN NKWE ORLANDE DIKA",
       image: miss3,
-      votes: 10000,
+      votes: 11881,
     },
     {
-        id: 4,
-        name: "Name 3",
-        image: miss4,
-        votes: 10000,
-      },
+      id: 4,
+      name: "UM FELICIA LAUREEN",
+      image: miss4,
+      votes: 10918,
+    },
   ];
+
+  const Switch = (slideIndex) => {
+    setCurrent(slideIndex);
+  };
+
   return (
     <>
       <div className="text-white">
@@ -57,11 +62,11 @@ const Miss = () => {
               {/* <div className="bg-[#f5e9a9] h-[2.5vh] rounded-sm"></div> */}
             </div>
             <center className="mt-3">
-              <p className="bg-gradient-to-r leading-[1.2] from-[#f5e9a9] to-[#906c33] text-transparent bg-clip-text text-[2.1em] px-4">
+              <p className="bg-gradient-to-r leading-[1.2] from-[#f5e9a9] to-[#906c33] text-transparent bg-clip-text text-[2.1em] px-10">
                 {mis[current].name}
               </p>
 
-              <p className="text-[#f5e9a9] font-bold text-2xl mt-2 font-face">
+              <p className="text-[#f5e9a9] font-bold text-[1.4em] mt-2 font-face">
                 {mis[current].votes} votes
               </p>
             </center>
@@ -93,17 +98,27 @@ const Miss = () => {
               <div className="w-5 h-5 shadow-2xl mr-4 rounded-full bg-gradient-to-br from-[#f5e9a9] via-[#c0800f] to-[#8c4e06]"></div>
             </div>
           </div>
-
-          <div className="flex gap-3">
-          {mis.map((miss) => (
-              <div key={miss.id} className="mt-7 w-[400px] aspect-square bg-[#212020] overflow-x-scroll">
-                <p className="">
-                  {miss.name}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
+        <div className="flex gap-3 px-3 overflow-x-scroll">
+          {mis.map((miss, index) => (
+            <div
+              key={miss.id}
+              onClick={() => Switch(index)}
+              className="mt-7 w-[32vh] flex-shrink-0 aspect-square bg-[#212020] flex flex-col justify-center items-center gap-2 rounded-lg"
+            >
+              <div
+                style={{ backgroundImage: `url(${miss.image})` }}
+                className="aspect-square w-[61%] rounded-full bg-center bg-cover duration-300 mt-2"
+              >
+                {""}
+              </div>
+              <center className="px-[5em]">{miss.name}</center>
+              <center className="text-gray-300">{miss.votes} votes</center>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-[10em]"></div>
       </div>
     </>
   );
