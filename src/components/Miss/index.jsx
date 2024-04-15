@@ -69,7 +69,7 @@ const Miss = () => {
                 {mis[current].name}
               </p>
 
-              <p className="text-[#f5e9a9] font-bold text-[1.4em] mt-2 font-face">
+              <p className="text-[#f5e9a9] font-bold text-[2em] mt-2 font-face">
                 {mis[current].votes} votes
               </p>
             </center>
@@ -138,8 +138,8 @@ const Miss = () => {
         <div className="mt-5 bg-[#f5e9a9] h-[2.5vh] rounded-sm"></div>
 
         <div className="px-4 mt-6 flex-col flex gap-3">
-          <h1 className="text-[#f5e9a9] text-2xl">A Propos</h1>
-          <p className="text-2xl mt-2">
+          <h1 className="text-[#f5e9a9] text-lg">A Propos</h1>
+          <p className="text-lg mt-2">
             People's choice est un concept qui permet à toute personne de voter
             pour sa candidate préférée en ligne et à tout moment.
           </p>
@@ -150,8 +150,8 @@ const Miss = () => {
           </center>
         </div>
 
-        <div className="mt-10 flex flex-col gap-2 px-4 text-2xl">
-          <h1 className="text-[#f5e9a9] text-2xl">Liens utiles</h1>
+        <div className="mt-10 flex flex-col gap-2 px-4 text-lg">
+          <h1 className="text-[#f5e9a9] text-lg">Liens utiles</h1>
           <p className="mt-3">A Propos</p>
           <p>Devenir partenaire</p>
           <p>Passer sa pub</p>
@@ -159,8 +159,8 @@ const Miss = () => {
           <p>FAQ</p>
         </div>
 
-        <div className="mt-[3.2em] flex flex-col gap-2 px-4 text-2xl">
-          <h1 className="text-[#f5e9a9] text-2xl">Contacts</h1>
+        <div className="mt-[3.2em] flex flex-col gap-2 px-4 text-lg">
+          <h1 className="text-[#f5e9a9] text-lg">Contacts</h1>
           <div className="flex gap-2 mt-3"><img src={localisation} alt="icon" /><p className="">2e étage immeuble de la pharmacie Mvog Ada</p></div>
           <div className="flex gap-2"><img src={phone} alt="icon" /><p className="">+237 656372666</p></div>
           <div className="flex gap-2"><img src={email} alt="icon" /><p className="">misscameroun@misscameroun.org</p></div>
