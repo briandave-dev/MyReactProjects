@@ -89,7 +89,7 @@ const Miss = () => {
             </center>
           </div>
 
-          <div className="mt-10 mb-7">
+          <div className="mt-10 mb-5">
             <div className="flex justify-between">
               <div className="w-5 h-5 shadow-2xl ml-4 rounded-full bg-gradient-to-br from-[#f5e9a9] via-[#c0800f] to-[#8c4e06]"></div>
               <center className="bg-gradient-to-r from-[#fdf491] to-[#906c33] text-transparent bg-clip-text">
@@ -104,7 +104,7 @@ const Miss = () => {
             <div
               key={miss.id}
               onClick={() => Switch(index)}
-              className="mt-7 w-[32vh] flex-shrink-0 aspect-square bg-[#212020] flex flex-col justify-center items-center gap-2 rounded-lg"
+              className="mt-5 w-[32vh] flex-shrink-0 aspect-square bg-[#212020] flex flex-col justify-center items-center gap-2 rounded-lg"
             >
               <div
                 style={{ backgroundImage: `url(${miss.image})` }}
@@ -117,6 +117,20 @@ const Miss = () => {
             </div>
           ))}
         </div>
+
+        <div className="mt-10 mb-7">
+            <div className="flex justify-between">
+              <div className="w-5 h-5 shadow-2xl ml-4 rounded-full bg-gradient-to-br from-[#f5e9a9] via-[#c0800f] to-[#8c4e06]"></div>
+              <center className="bg-gradient-to-r from-[#fdf491] to-[#906c33] text-transparent bg-clip-text">
+                Nos Partenaires
+              </center>
+              <div className="w-5 h-5 shadow-2xl mr-4 rounded-full bg-gradient-to-br from-[#f5e9a9] via-[#c0800f] to-[#8c4e06]"></div>
+            </div>
+          </div>
+
+          <div className="grid place-items-center">
+            <h1>Flemme</h1>
+          </div>
 
         <div className="mt-[10em]"></div>
       </div>
