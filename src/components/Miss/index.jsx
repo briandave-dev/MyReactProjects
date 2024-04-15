@@ -42,7 +42,7 @@ const Miss = () => {
       <div className="text-white">
         <nav className="flex justify-between p-4">
           <FaBars className="text-2xl" />
-          <p className="mr-auto ml-auto text-sm font-semibold">
+          <p className="mr-auto ml-auto text-sm">
             People's <span className="text-[#f5e9a9]">Choice</span>
           </p>
         </nav>
@@ -61,7 +61,7 @@ const Miss = () => {
                 {mis[current].name}
               </p>
 
-              <p className="text-[#f5e9a9] font-bold text-2xl mt-2">
+              <p className="text-[#f5e9a9] font-bold text-2xl mt-2 font-face">
                 {mis[current].votes} votes
               </p>
             </center>

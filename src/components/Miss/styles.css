@@ -1,3 +1,15 @@
 body {
     background-color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.font-face {
+    font-family: "Jane CapsBold W00 Regular";
+    src: url("https://db.onlinewebfonts.com/t/4c7e684943d99e7368c8a61ec5475d4c.eot");
+    src: url("https://db.onlinewebfonts.com/t/4c7e684943d99e7368c8a61ec5475d4c.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4c7e684943d99e7368c8a61ec5475d4c.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4c7e684943d99e7368c8a61ec5475d4c.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/4c7e684943d99e7368c8a61ec5475d4c.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4c7e684943d99e7368c8a61ec5475d4c.svg#Jane CapsBold W00 Regular")format("svg");
 }
