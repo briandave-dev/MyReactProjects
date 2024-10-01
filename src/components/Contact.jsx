@@ -5,8 +5,12 @@ import Stars from "./25/Stars";
 import ImageSlider from "./25/Image-slider";
 import LoadMore from "./25/LoadMore";
 import TicTacToe from "./25/tictactoe";
+import Filter from "./25/Filter/Filter";
+import Debounce from "./25/Debounce/Debounce";
 
 const Contact = () => {
+  const products = ["Banana", "Orange", "Apple", "Pineapple"];
+
   return (
     <>
       {/* <Accordion/> 
@@ -16,7 +20,9 @@ const Contact = () => {
             <LoadMore /> 
             <Calculator /> 
         */}
-        <TicTacToe />
+        {/* <TicTacToe /> */}
+        {/* <Filter products={products} /> */}
+        <Debounce />
     </>
   );
 };
