@@ -8,6 +8,8 @@ import TicTacToe from "./25/tictactoe";
 import Filter from "./25/Filter/Filter";
 import Debounce from "./25/Debounce/Debounce";
 import Requests from "./SOLID/SingleResponsabilityComponents/Requests"
+import { ThemeContext } from "./ThemeContext";
+import Test from "./test/Test";
 
 const Contact = () => {
   const products = ["Banana", "Orange", "Apple", "Pineapple"];
@@ -25,7 +27,8 @@ const Contact = () => {
         {/* <Filter products={products} /> */}
         {/* <Debounce /> */}
 
-        <Requests />
+        {/* <Requests /> */}
+        <Test />
     </>
   );
 };

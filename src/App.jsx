@@ -10,12 +10,12 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Index from "./components/Index";
 import Miss from "./components/Miss";
-
+import { ThemeProvider } from "./components/ThemeContext";
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
+    <ThemeProvider>
     {/* <Miss /> */}
       <NavBar />
       <Routes>
@@ -24,7 +24,7 @@ function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
       </Routes>
-    </>
+    </ThemeProvider>
   );
 }
 
