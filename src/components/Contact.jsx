@@ -12,6 +12,8 @@ import { ThemeContext } from "./ThemeContext";
 import Test from "./test/Test";
 import Todos from "./test/Todos";
 
+import Calculator from "./25/calculator";
+
 const Contact = () => {
   const products = ["Banana", "Orange", "Apple", "Pineapple"];
 
@@ -30,7 +32,9 @@ const Contact = () => {
 
         {/* <Requests /> */}
         {/* <Test /> */}
-        <Todos />
+        {/* <Todos /> */}
+        <Calculator /> 
+
     </>
   );
 };
