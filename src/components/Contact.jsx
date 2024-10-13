@@ -10,6 +10,7 @@ import Debounce from "./25/Debounce/Debounce";
 import Requests from "./SOLID/SingleResponsabilityComponents/Requests"
 import { ThemeContext } from "./ThemeContext";
 import Test from "./test/Test";
+import Todos from "./test/Todos";
 
 const Contact = () => {
   const products = ["Banana", "Orange", "Apple", "Pineapple"];
@@ -28,7 +29,8 @@ const Contact = () => {
         {/* <Debounce /> */}
 
         {/* <Requests /> */}
-        <Test />
+        {/* <Test /> */}
+        <Todos />
     </>
   );
 };
