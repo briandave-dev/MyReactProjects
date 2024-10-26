@@ -11,6 +11,7 @@ import Requests from "./SOLID/SingleResponsabilityComponents/Requests"
 import { ThemeContext } from "./ThemeContext";
 import Test from "./test/Test";
 import Todos from "./test/Todos";
+import Auth from "./test/Auth"
 
 import Calculator from "./25/calculator";
 
@@ -33,7 +34,8 @@ const Contact = () => {
         {/* <Requests /> */}
         {/* <Test /> */}
         {/* <Todos /> */}
-        <Calculator /> 
+        {/* <Calculator />  */}
+        <Auth />
 
     </>
   );
