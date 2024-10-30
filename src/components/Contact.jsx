@@ -7,11 +7,11 @@ import LoadMore from "./25/LoadMore";
 import TicTacToe from "./25/tictactoe";
 import Filter from "./25/Filter/Filter";
 import Debounce from "./25/Debounce/Debounce";
-import Requests from "./SOLID/SingleResponsabilityComponents/Requests"
+import Requests from "./SOLID/SingleResponsabilityComponents/Requests";
 import { ThemeContext } from "./ThemeContext";
 import Test from "./test/Test";
 import Todos from "./test/Todos";
-import Auth from "./test/Auth"
+import Auth from "./test/Auth";
 
 import Calculator from "./25/calculator";
 
@@ -20,23 +20,21 @@ const Contact = () => {
 
   return (
     <>
-      {/* <Accordion/> 
-            <CreateRandomValue/> 
-            <Stars noOfStars= {5}/> 
-            <ImageSlider url={'https://picsum.photos/v2/list'} limit={10} page={2}/>
-            <LoadMore /> 
-            <Calculator /> 
-        */}
-        {/* <TicTacToe /> */}
-        {/* <Filter products={products} /> */}
-        {/* <Debounce /> */}
+      <Accordion />
+      <CreateRandomValue />
+      <Stars noOfStars={5} />
+      <ImageSlider url={"https://picsum.photos/v2/list"} limit={10} page={2} />
+      <LoadMore />
+      <Calculator />
+      {/* <TicTacToe /> */}
+      {/* <Filter products={products} /> */}
+      {/* <Debounce /> */}
 
-        {/* <Requests /> */}
-        {/* <Test /> */}
-        {/* <Todos /> */}
-        {/* <Calculator />  */}
-        <Auth />
-
+      {/* <Requests /> */}
+      {/* <Test /> */}
+      {/* <Todos /> */}
+      {/* <Calculator /> 
+        {/* <Auth /> */}
     </>
   );
 };
