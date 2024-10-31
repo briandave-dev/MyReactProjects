@@ -26,9 +26,9 @@ const Contact = () => {
       <ImageSlider url={"https://picsum.photos/v2/list"} limit={10} page={2} />
       <LoadMore />
       <Calculator />
-      {/* <TicTacToe /> */}
-      {/* <Filter products={products} /> */}
-      {/* <Debounce /> */}
+      <TicTacToe /> 
+      <Filter products={products} />
+      {/* <Debounce />
 
       {/* <Requests /> */}
       {/* <Test /> */}
