@@ -7,8 +7,7 @@ const DisplayData = () => {
     "https://zenbio.zenitheinsurance.com:9002/orass/Zen-renouvellement/1001-1010002998";
 
   useEffect(() => {
-    axios
-      .get(endpoint)
+    fetch(endpoint)
       .then((response) => {
         console.log(response.data); // Log data to console
         setData(response.data); // Set data to state
