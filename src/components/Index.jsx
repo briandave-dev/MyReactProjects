@@ -7,7 +7,7 @@ const Index = () => {
       <p className="font-bold text-lg">
         Welcome to Dave's simple react projects
       </p>
-      <Zenithe />
+      {/* <Zenithe /> */}
     </div>
   );
 };
