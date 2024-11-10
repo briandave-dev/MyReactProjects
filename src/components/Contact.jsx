@@ -28,7 +28,7 @@ const Contact = () => {
       <Calculator />
       <TicTacToe />
       <Filter products={products} />
-      {/* <Debounce />
+      <Debounce />
 
       {/* <Requests /> */}
       {/* <Test /> */}
