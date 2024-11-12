@@ -33,7 +33,7 @@ const Contact = () => {
       {/* <Requests /> */}
       {/* <Test /> */}
       {/* <Todos /> */}
-      <Calculator />
+      {/* <Calculator /> */}
       {/* <Auth /> */}
     </>
   );
